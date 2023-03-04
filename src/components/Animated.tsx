@@ -1,9 +1,9 @@
 import { motion } from 'framer-motion';
 
-function Animated({children}) {
+function Animated(props: any) {
     return ( 
           <motion.div initial={{opacity: 0}} animate={{opacity: 1}} exit={{opacity: 0}}>
-            {children}
+            {props.children}
           </motion.div>
      );
 }
