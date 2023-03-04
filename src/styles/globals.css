@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .w-screen-layout-offset {
+    @apply min-w-[4rem] xl:min-w-[18rem] desktop:min-w-[24rem] desktop-xl:min-w-[32rem];
+  }
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  transition: all 0.5s;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-family: 'Inter';
+  @apply h-full;
+}
+
+#__next {
+  @apply h-full;
+}
+
+
+body {
+  @apply bg-zinc-100;
+}
+
+h1 {
+  @apply text-7xl font-bold;
+}
+
+h2 {
+  @apply text-4xl font-semibold;
+}
+
+h3 {
+  @apply text-3xl font-semibold;
+}
+
+h4 {
+  @apply text-xl;
+  @apply font-medium;
+}
+
+ul {
+  @apply list-inside;
+}
+
+li {
+  @apply list-disc;
+  @apply indent-[-1em] pl-[1em];
+  @apply leading-tight;
+}

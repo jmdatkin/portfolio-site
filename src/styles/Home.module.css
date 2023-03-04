@@ -1,0 +1,7 @@
+.Nameplate {
+  --from-color: #747474;
+  --to-color: #000000;
+  background: linear-gradient(-10deg, var(--from-color), var(--to-color));
+  background-clip: text;
+  color: transparent;
+}
