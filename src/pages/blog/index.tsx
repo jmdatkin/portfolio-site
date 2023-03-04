@@ -45,10 +45,10 @@ export default function Blog(props: Props) {
                 </header>
                 <div className="p-6">
                     <div className="flex flex-col">
-                        {props.allPosts.map((post: Post) => {
+                        {props.allPosts.map((post: Post, idx: number) => {
                             // return <span>{post.title}</span>
                             return (
-                                <div className='w-full [&:not(:last-child)]:border-b hover:bg-zinc-50 active:bg-zinc-100 duration-[0.07s]'>
+                                <div key={idx} className='w-full [&:not(:last-child)]:border-b hover:bg-zinc-50 active:bg-zinc-100 duration-[0.07s]'>
                                     <Link href={`/blog/${post.slug}`}>
                                         <div className='p-6 py-10'>
                                             <div className="flex items-center justify-between text-2xl gap-4">

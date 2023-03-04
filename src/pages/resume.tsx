@@ -42,7 +42,7 @@ export default function About() {
                             </p>
                             <ul className='space-y-2'>
                                 <li>3.4 Cumulative GPA</li>
-                                <li>Placed on Dean's List</li>
+                                <li>Placed on Dean&apos;s List</li>
                                 <li>Minor in Music</li>
 
                             </ul>

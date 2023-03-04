@@ -36,7 +36,7 @@ export default function About() {
                             Tool to generate screenshots of Instagram posts with user-generated content
                         </Project>
                         <Project title="Portfolio Site" href="/" slug="" disabled tech={['Next.js', 'Tailwind CSS']}>
-                            You're looking at it!
+                            You&apos;re looking at it!
                         </Project>
                         <div className="h-full !bg-zinc-200 flex flex-col items-center justify-around text-center">
                             <span className="text-zinc-400">

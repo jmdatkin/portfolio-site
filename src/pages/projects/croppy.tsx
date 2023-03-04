@@ -32,7 +32,7 @@ export default function GridChat() {
             <div className="[&>*]:mb-2">
               <p>Croppy is a streamlined image editing experience on the web.</p>
               <p>It carries out many of the core tasks of advanced image editing software like Photoshop, but without the bloat of a desktop application.</p>
-              <p>It's designed for digital media power users needing to crop images to a specific size for display on the web.</p>
+              <p>It&apos;s designed for digital media power users needing to crop images to a specific size for display on the web.</p>
             </div>
           </header>
           <section ref={carouselWrapperRef} className="min-h-[500px] md:h-full">

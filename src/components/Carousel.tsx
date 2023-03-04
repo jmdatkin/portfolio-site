@@ -25,7 +25,7 @@ function Carousel(props: Props) {
             window.removeEventListener('resize', onResize);
             window.clearInterval(iid);
         }
-    }, []);
+    }, [props.wrapper]);
 
     const increment = function () {
         setImageIndex(floorMod(imageIndex + 1, props.imagePaths.length));
