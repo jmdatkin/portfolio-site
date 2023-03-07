@@ -21,19 +21,21 @@ export default function Home() {
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <link rel="icon" href="/favicon.ico" />
         </Head>
-        <header className="flex justify-between">
-          <div className="flex flex-grow flex-col p-6 py-8 from-cyan-500 to-blue-500">
-            <h1 className={`bg-gradient-to-r text-transparent bg-clip-text from-sky-800 to-blue-600 tracking-tight desktop-xl:text-8xl`}>Julian Atkin</h1>
-            <h2 className="mb-4 text-zinc-800">Full Stack Engineer</h2>
+        <header className="flex flex-col w-full justify-around items-center py-4">
+          <div className="flex flex-col md:w-3/4 items-center md:text-center mx-auto p-6 py-8">
+            <div>
+              <h1 className={`bg-gradient-to-r text-transparent bg-clip-text from-sky-800 to-blue-600 tracking-tight desktop-xl:text-8xl`}>Julian Atkin</h1>
+              <h2 className="mb-4 text-zinc-800">Full Stack Engineer</h2>
+            </div>
             <p className="mb-8 text-zinc-800 text-lg">Hi, I&apos;m Julian! <strong>My mission</strong> is to build accessible and usable <strong>web technologies</strong> that make the world a <strong>better place</strong>.</p>
             <div className="mb-16">
               <p className="text-zinc-800">Get in touch <FontAwesomeIcon icon={faArrowDown}></FontAwesomeIcon> </p>
               <SocialButtons></SocialButtons>
             </div>
           </div>
-          <div className="relative object-cover min-w-[16rem] border-l hidden md:block">
+          {/* <div className="relative object-cover min-w-[16rem] border-l hidden md:block">
             <Portrait></Portrait>
-          </div>
+          </div> */}
         </header>
         {/* <section className="border-t border-b">
           <h3 className="px-6 py-6 border-b ">Projects</h3>
