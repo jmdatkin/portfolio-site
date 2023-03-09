@@ -27,7 +27,7 @@ export default function Home() {
               <h1 className={`bg-gradient-to-r text-transparent bg-clip-text from-sky-800 to-blue-600 tracking-tight desktop-xl:text-8xl`}>Julian Atkin</h1>
               <h2 className="mb-4 text-zinc-800">Full Stack Engineer</h2>
             </div>
-            <p className="mb-8 text-zinc-800 text-lg">Hi, I&apos;m Julian! <strong>My mission</strong> is to build accessible and usable <strong>web technologies</strong> that make the world a <strong>better place</strong>.</p>
+            <p className="my-12 animate-fade-in text-zinc-800 text-lg">Hi, I&apos;m Julian! <strong>My mission</strong> is to build accessible and usable <strong>web technologies</strong> that make the world a <strong>better place</strong>.</p>
             <div className="mb-16">
               <p className="text-zinc-800">Get in touch <FontAwesomeIcon icon={faArrowDown}></FontAwesomeIcon> </p>
               <SocialButtons></SocialButtons>

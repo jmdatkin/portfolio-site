@@ -1,4 +1,4 @@
-import { faEllipsis, faHamburger, faRocket } from "@fortawesome/free-solid-svg-icons";
+import { faArrowUpRightFromSquare, faEllipsis, faHamburger, faRocket } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 import { ReactNode } from "react";
@@ -43,9 +43,12 @@ function Project(props: ProjectProps) {
         // <article className={`Project relative hover:shadow-md active:shadow-sm active:bg-zinc-100 ${!props.disabled ? 'hover:after:opacity-100' : ''} after:block after:h-full after:w-full  after:bg-zinc-700 after:absolute after:opacity-0 focus-visible:bg-zinc-100 focus-visible:outline-none hover:z-[999] focus-visible:z-[999] cursor-pointer duration-[0.07s] h-full flex flex-col`}>
         <article className={`Project relative hover:shadow-md hover:bg-zinc-50 active:shadow-sm active:bg-zinc-100 focus-visible:bg-zinc-100 focus-visible:outline-none hover:z-[999] focus-visible:z-[999] cursor-pointer duration-[0.07s] h-full flex flex-col`}>
             {props.disabled ? inner() :
+            <>
                 <Link className="block w-full h-full" href={`/projects/${props.slug}`}>
                     {inner()}
                 </Link>
+                <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="absolute right-4 bottom-4 text-3xl desktop:text-5xl text-zinc-200"></FontAwesomeIcon>
+            </>
                 // <>
                 //     {inner()}
                 //     {<div className="w-full h-full grid grid-cols-2 absolute z-[1000]">

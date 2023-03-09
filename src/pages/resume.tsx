@@ -104,7 +104,10 @@ export default function About() {
                                 <li>React.js</li>
                                 <li>Vue.js</li>
                                 <li>Vanilla JS</li>
+                                <li>Node.js</li>
                                 <li>CSS</li>
+                                <li>SQL</li>
+                                <li>Linux</li>
                             </ul>
 
                         </div>

@@ -1,6 +1,7 @@
 import { faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
+import { getPlaiceholder } from "plaiceholder";
 import { MutableRefObject, ReactNode, useEffect, useRef, useState } from "react";
 
 type Props = {
@@ -35,22 +36,30 @@ function Carousel(props: Props) {
         setImageIndex(floorMod(imageIndex - 1, props.imagePaths.length));
     };
 
+    const getBlurPath = function(imagePath: string) {
+        // const regex = new RegExp("^(.*)(\..*)$");
+        // const path = imagePath.replace(regex, "$1.blur");
+        const path = imagePath.replace('.png','.blur.png');
+        return path;
+    };
+
     return (
         <div className="w-full h-full relative overflow-hidden">
             {boundingBox !== null ?
                 <div className="h-full flex relative" style={{ transform: `translateX(${boundingBox.width * imageIndex * -1}px)` }}>
                     {props.imagePaths.map((image, idx) => {
                         // return <Image key={idx} src={image} width={boundingBox.width} height={boundingBox.height} alt="Project screenshot" style={{ objectFit: 'cover', imageRendering: 'auto', height: '100%' }}></Image>
-                        return <Image key={idx} src={image} fill alt="Project screenshot" style={{ objectFit: 'cover', imageRendering: 'auto', transform: `translateX(${boundingBox.width*idx}px)`}}></Image>
+                        return <Image key={idx} src={image} fill alt="Project screenshot" placeholder="blur" blurDataURL={getBlurPath(image)}  style={{ objectFit: 'cover', imageRendering: 'auto', transform: `translateX(${boundingBox.width*idx}px)`}}></Image>
+                        // return <span>{getBlurPath(image)}</span>
                     })}
                 </div>
                 : ''
             }
             <div className="w-full h-full top-0 left-0 absolute grid grid-cols-2 z-[999]">
-                <button onClick={decrement} className="block w-full h-full bg-white/60 hover:opacity-100 active:bg-white/70 opacity-0 duration-[0.08s]">
+                <button onClick={decrement} className="block w-full h-full bg-white/60 hover:opacity-100 focus-visible:opacity-100 active:bg-white/70 opacity-0 duration-[0.08s]">
                     <FontAwesomeIcon icon={faChevronLeft}></FontAwesomeIcon>
                 </button>
-                <button onClick={increment} className="block w-full h-full bg-white/60 hover:opacity-100 active:bg-white/70 opacity-0 duration-[0.08s]">
+                <button onClick={increment} className="block w-full h-full bg-white/60 hover:opacity-100 focus-visible:opacity-100 active:bg-white/70 opacity-0 duration-[0.08s]">
                     <FontAwesomeIcon icon={faChevronRight}></FontAwesomeIcon>
                 </button>
             </div>
