@@ -6,8 +6,9 @@ import Project from '@/components/Project'
 import Portrait from '@/components/Portrait'
 import SocialButtons from '@/components/SocialButtons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowDown } from '@fortawesome/free-solid-svg-icons'
+import { faArrowDown, faArrowUpRightFromSquare, faFaceSmile, faFile, faPenRuler, faPerson } from '@fortawesome/free-solid-svg-icons'
 import Animated from '@/components/Animated'
+import Link from 'next/link'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -29,7 +30,7 @@ export default function Home() {
             </div>
             <p className="my-12 animate-fade-in text-zinc-800 text-lg">Hi, I&apos;m Julian! <strong>My mission</strong> is to build accessible and usable <strong>web technologies</strong> that make the world a <strong>better place</strong>.</p>
             <div className="mb-16 flex flex-col items-center">
-              <p className="text-zinc-800">Get in touch <FontAwesomeIcon icon={faArrowDown}></FontAwesomeIcon> </p>
+              {/* <p className="text-zinc-800">Get in touch <FontAwesomeIcon icon={faArrowDown}></FontAwesomeIcon> </p> */}
               <SocialButtons></SocialButtons>
             </div>
           </div>
@@ -37,31 +38,43 @@ export default function Home() {
             <Portrait></Portrait>
           </div> */}
         </header>
-        {/* <section className="border-t border-b">
-          <h3 className="px-6 py-6 border-b ">Projects</h3>
-          <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 [&>*]:bg-white gap-px bg-zinc-200">
-            <Project title="Grid Chat" slug="grid-chat" href="https://grid-chat-app.web.app/" tech={['React.js', 'Firebase Realtime Database', 'Tailwind CSS']}>
-              Infinite 2D spatial messaging board
-            </Project>
-            <Project title="Croppy" slug="croppy" href="https://croppy.vercel.app/" tech={['Vue.js', 'Sharp', 'Firebase Firestore', 'Vercel Serverless Functions', 'Tailwind CSS']}>
-              In-browser image cropping, resizing, and compressing tool
-            </Project>
-            <Project title="League of Legends Ability Quiz" href="https://lol-ability-quiz.vercel.app/" slug="lol-ability-quiz" tech={['Next.js', 'Cheerio', 'Vercel Hosting', 'Tailwind CSS']}>
-              Browser-based game testing knowledge of ability names in the online game League of Legends
-            </Project>
-            <Project title="Fake Instagram Post Generator" href="https://fake-instagram-post-generator.vercel.app/" slug="fake-instagram-post-generator" tech={['Svelte', 'html2canvas', 'Vercel Hosting']}>
-              Tool to generate screenshots of Instagram posts with user-generated content
-            </Project>
-            <Project title="Portfolio Site" href="/" slug="" disabled tech={['Next.js', 'Tailwind CSS']}>
-              You're looking at it!
-            </Project>
-            <div className="h-full !bg-zinc-200 flex flex-col items-center justify-around text-center">
-              <span className="text-zinc-400">
-                More amazing projects on the way!
-              </span>
+        <section className="border-t border-b">
+          <div className="w-full min-h-[300px] grid grid-cols-1 lg:grid-cols-3 [&>*]:bg-white gap-px bg-zinc-200">
+            <div className="relative flex flex-col items-center">
+              <Link className="block w-full h-full hover:bg-zinc-50 active:bg-zinc-100 hover:shadow-md active:shadow-sm" href="/projects">
+                <div className="flex flex-col items-center justify-around h-full p-4 py-6">
+                  <div className="flex flex-col items-center space-y-3">
+                  <h3 className="font-normal">Projects</h3>
+                  <FontAwesomeIcon className="text-3xl text-zinc-700" icon={faPenRuler}></FontAwesomeIcon>
+                  </div>
+                </div>
+              </Link>
+              <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="absolute right-4 bottom-4 text-5xl text-zinc-200"></FontAwesomeIcon>
+            </div>
+            <div className="relative flex flex-col items-center">
+              <Link className="block w-full h-full hover:bg-zinc-50 active:bg-zinc-100 hover:shadow-md active:shadow-sm" href="/resume">
+                <div className="flex flex-col items-center justify-around h-full p-4 py-6">
+                  <div className="flex flex-col items-center space-y-3">
+                  <h3 className="font-normal">Resume</h3>
+                  <FontAwesomeIcon className="text-3xl text-zinc-700" icon={faFile}></FontAwesomeIcon>
+                  </div>
+                </div>
+              </Link>
+              <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="absolute right-4 bottom-4 text-5xl text-zinc-200"></FontAwesomeIcon>
+            </div>
+            <div className="relative flex flex-col items-center">
+              <Link className="block w-full h-full hover:bg-zinc-50 active:bg-zinc-100 hover:shadow-md active:shadow-sm" href="/about">
+                <div className="flex flex-col items-center justify-around h-full p-4 py-6">
+                  <div className="flex flex-col items-center space-y-3">
+                  <h3 className="font-normal">About Me</h3>
+                  <FontAwesomeIcon className="text-3xl text-zinc-700" icon={faFaceSmile}></FontAwesomeIcon>
+                  </div>
+                </div>
+              </Link>
+              <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="absolute right-4 bottom-4 text-5xl text-zinc-200"></FontAwesomeIcon>
             </div>
           </div>
-        </section> */}
+        </section>
       </Animated>
     </>
   )
