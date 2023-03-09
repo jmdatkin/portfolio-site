@@ -62,3 +62,46 @@ li {
   @apply indent-[-1em] pl-[1em];
   @apply leading-tight;
 }
+
+.Hero {
+  @apply relative z-[4] before:z-[-1] before:w-full before:h-full before:absolute;
+}
+
+.hero-theme-1 {
+  @apply before:bg-gradient-to-br before:from-cyan-500 before:to-green-800
+}
+
+.hero-theme-1 .Title {
+}
+
+.hero-theme-2 {
+  @apply before:bg-gradient-to-br before:from-amber-600 before:to-fuchsia-700
+}
+
+.hero-theme-2 .Title {
+  @apply text-zinc-100;
+}
+
+.hero-theme-2 .Subtitle {
+  @apply text-zinc-100;
+}
+
+.Hero.hero-theme-2 .Tagline {
+  @apply text-white;
+}
+
+.hero-theme-3 {
+  @apply before:bg-gradient-to-br before:from-slate-900 before:to-slate-700
+}
+
+.hero-theme-3 .Title {
+  @apply text-zinc-100;
+}
+
+.hero-theme-3 .Subtitle {
+  @apply text-zinc-100;
+}
+
+.Hero.hero-theme-3 .Tagline {
+  @apply text-white;
+}

@@ -1,7 +1,7 @@
 // import { ReactNode } from "react";
 
 import { useRouter } from "next/router";
-import { MutableRefObject, useRef } from "react";
+import { MutableRefObject, useRef, useState } from "react";
 import Navbar from "./Navbar";
 
 function Layout({children}) {
@@ -13,9 +13,11 @@ function Layout({children}) {
         '/about': 'bg-blue-300 border-blue-600',
     });
 
+    const [darkMode, setDarkMode] = useState(false);
+
     return ( 
         <>
-         <div className={`w-full h-full bg-white`}>
+         <div className={`w-full h-full bg-white ${darkMode ? 'dark' : ''}`}>
           <div className="flex flex-col h-full">
             <div className="flex min-h-[5rem] border-b">
               <div className="w-screen-layout-offset border-r hidden md:block bg-zinc-100"></div>
@@ -26,7 +28,7 @@ function Layout({children}) {
             </div>
             <div className="flex flex-grow">
               <div className="w-screen-layout-offset border-r hidden md:block bg-zinc-100"></div>
-              <main className={`flex-grow bg-white`}>
+              <main className={`flex-grow bg-white relative`}>
                 {children}
               </main>
               <div className="w-screen-layout-offset border-l hidden md:block bg-zinc-100"></div>
