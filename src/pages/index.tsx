@@ -28,7 +28,7 @@ export default function Home() {
               <h2 className="mb-4 text-zinc-800">Full Stack Engineer</h2>
             </div>
             <p className="my-12 animate-fade-in text-zinc-800 text-lg">Hi, I&apos;m Julian! <strong>My mission</strong> is to build accessible and usable <strong>web technologies</strong> that make the world a <strong>better place</strong>.</p>
-            <div className="mb-16">
+            <div className="mb-16 flex flex-col items-center">
               <p className="text-zinc-800">Get in touch <FontAwesomeIcon icon={faArrowDown}></FontAwesomeIcon> </p>
               <SocialButtons></SocialButtons>
             </div>

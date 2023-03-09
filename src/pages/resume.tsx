@@ -100,16 +100,22 @@ export default function About() {
                     <section className="">
                         <h3 className="p-6 pb-2">Skills</h3>
                         <div className="w-full p-6">
-                            <ul className='space-y-2'>
+                            <div className="flex justify-between">
+                            <ul className='grow space-y-2'>
                                 <li>React.js</li>
                                 <li>Vue.js</li>
                                 <li>Vanilla JS</li>
                                 <li>Node.js</li>
                                 <li>CSS</li>
+                            </ul>
+                            <ul className='grow space-y-2'>
+                                <li>MongoDB</li>
                                 <li>SQL</li>
+                                <li>AWS</li>
+                                <li>Firebase</li>
                                 <li>Linux</li>
                             </ul>
-
+                            </div>
                         </div>
                     </section>
                 </div>
