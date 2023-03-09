@@ -39,7 +39,7 @@ export default function GridChat() {
             </div>
           </header>
           <section ref={carouselWrapperRef} className="h-[500px] md:h-full">
-            <Carousel wrapper={carouselWrapperRef}  imagePaths={['/projects/grid-chat/1.png', '/projects/grid-chat/2.png']}></Carousel>
+            <Carousel wrapper={carouselWrapperRef}  imagePaths={['/projects/grid-chat/1.png', '/projects/grid-chat/2.png', '/projects/grid-chat/3.png']}></Carousel>
           </section>
           <section className="w-full p-6 flex flex-col">
             <h3 className="mb-4">Built With</h3>
