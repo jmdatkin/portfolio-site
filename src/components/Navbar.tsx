@@ -44,7 +44,7 @@ function Navbar() {
                 })}
             </nav>
             <div className="sm:hidden flex items-center h-full px-3 ">
-                <button className="text-3xl hover:border p-2 rounded" onClick={() => setMobileNavOpen(!mobileNavOpen)}><FontAwesomeIcon icon={faBars}></FontAwesomeIcon></button>
+                <button className="text-3xl border border-transparent hover:border-zinc-200 p-2 px-3 mx-1 active:bg-zinc-100 rounded" onClick={() => setMobileNavOpen(!mobileNavOpen)}><FontAwesomeIcon icon={faBars}></FontAwesomeIcon></button>
             </div>
             <div className={`${mobileNavOpen ? 'pointer-events-auto scale-100 opacity-1' : 'pointer-events-none scale-95 opacity-0'} fixed z-[999] h-full w-full bg-white sm:hidden transition-all ease duration-[0.4s]`}>
                 <nav className={`flex h-full w-full bg-white flex flex-col text-2xl`}>
