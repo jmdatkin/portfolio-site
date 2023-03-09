@@ -22,7 +22,7 @@ function Layout({children}) {
             <div className="flex min-h-[5rem] border-b">
               <div className="w-screen-layout-offset border-r hidden md:block bg-zinc-100"></div>
               <div className="flex-grow items-center">
-                <Navbar></Navbar>
+                <Navbar setDarkMode={setDarkMode}></Navbar>
               </div>
               <div className="w-screen-layout-offset border-l hidden md:block bg-zinc-100"></div>
             </div>

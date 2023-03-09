@@ -2,7 +2,11 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { useEffect, useRef } from "react";
 
-function Navbar() {
+type Props = {
+    setDarkMode: Function
+}
+
+function Navbar(props: Props) {
 
     const router = useRouter();
 
