@@ -52,7 +52,7 @@ function Navbar() {
                         // const active = router.pathname === link.href;
                         const re = new RegExp(`^${link.href}(/.+)?$`);
                         const active = re.test(router.pathname);
-                        return <Link onClick={() => setMobileNavOpen(false)} key={idx} className={`${active ? 'text-zinc-900' : ''} block p-4 flex items-center hover:text-zinc-900 focus-visible:bg-zinc-100 font-semibold text-zinc-400 duration-[0.07s]`} href={link.href}>{link.name}</Link>
+                        return <Link onClick={() => setMobileNavOpen(false)} key={idx} className={`${active ? 'text-zinc-900' : ''} block p-4 flex items-center focus-visible:bg-zinc-100 font-semibold text-zinc-400 duration-[0.07s]`} href={link.href}>{link.name}</Link>
                     })}
                 </nav>
             </div>
