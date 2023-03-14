@@ -25,7 +25,7 @@ export default function About() {
             {/* <ul>
                 <li>Located in Queens, NY</li>
             </ul> */}
-            <p>Hi, I'm Julian! I'm twenty-three years old, born and rasied in Queens, NY. I'm obsessed with technology and improving the lives of others in every way I can. I have made it my mission to develop tools that will leave a positive impact on the lives of their users.</p>
+            <p>Hi, I'm Julian! I'm twenty-three years old, born and raised in Queens, NY. I'm obsessed with technology and improving the lives of others in every way I can. I have made it my mission to develop tools that will leave a positive impact on the lives of their users.</p>
                 <p>In the world today, so many possibilities are unfolding each moment. Each one brings with it new ways to invent, discover, and enhance.</p>
                 <p>I develop software for the thrill and satisfaction of inventing something new, and the fulfillment of improving the lives and experiences of others.</p>
             </div>

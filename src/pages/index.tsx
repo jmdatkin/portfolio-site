@@ -49,7 +49,7 @@ export default function Home() {
                   </div>
                 </div>
               </Link>
-              <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="absolute right-4 bottom-4 text-5xl text-zinc-200"></FontAwesomeIcon>
+              {/* <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="absolute right-4 bottom-4 text-5xl text-zinc-200"></FontAwesomeIcon> */}
             </div>
             <div className="relative flex flex-col items-center">
               <Link className="block w-full h-full hover:bg-zinc-50 active:bg-zinc-100 hover:shadow-md active:shadow-sm" href="/resume">
@@ -60,7 +60,7 @@ export default function Home() {
                   </div>
                 </div>
               </Link>
-              <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="absolute right-4 bottom-4 text-5xl text-zinc-200"></FontAwesomeIcon>
+              {/* <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="absolute right-4 bottom-4 text-5xl text-zinc-200"></FontAwesomeIcon> */}
             </div>
             <div className="relative flex flex-col items-center">
               <Link className="block w-full h-full hover:bg-zinc-50 active:bg-zinc-100 hover:shadow-md active:shadow-sm" href="/about">
@@ -71,7 +71,7 @@ export default function Home() {
                   </div>
                 </div>
               </Link>
-              <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="absolute right-4 bottom-4 text-5xl text-zinc-200"></FontAwesomeIcon>
+              {/* <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="absolute right-4 bottom-4 text-5xl text-zinc-200"></FontAwesomeIcon> */}
             </div>
           </div>
         </section>
