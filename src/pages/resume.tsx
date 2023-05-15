@@ -23,7 +23,7 @@ export default function About() {
                     <h1 className={`tracking-tight`}>Resume</h1>
                 </header>
                 <div className="grid grid-cols-1 md:grid-cols-2 border-t border-b bg-zinc-200 gap-px [&>*]:bg-white">
-                    <section className="">
+                    {/* <section className="">
                         <h3 className="p-6 pb-2">Work Experience</h3>
                         <div className="w-full p-6">
                             <p className="mb-4">
@@ -32,7 +32,7 @@ export default function About() {
                             </p>
                             Designed and developed a database and admin console to manage records of 100+ meal recipients and drivers. 
                         </div>
-                    </section>
+                    </section> */}
                     <section className="">
                         <h3 className="p-6 pb-2">Education</h3>
                         <div className="w-full p-6">
