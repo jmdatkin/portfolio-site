@@ -26,11 +26,7 @@ function Navbar() {
         {
             name: "About",
             href: "/about"
-        },
-        {
-            name: "Blog",
-            href: "/blog"
-        },
+        }
     ]);
 
     return (
