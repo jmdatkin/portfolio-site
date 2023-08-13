@@ -43,20 +43,19 @@ export default function GridChat() {
             <h3 className="mb-4">Built With</h3>
             <div className="mb-4 flex flex-col">
               <h4>Next.js</h4>
-              <span>Data fetching and loading</span>
+              {/* <span>Data fetching and loading</span> */}
             </div>
             <div className="mb-4 flex flex-col">
               <h4>Cheerio</h4>
-              <span>Web scraping library</span>
-              <span>Facilitates data scraping from League of Legends Wiki</span>
+              <span>Scrapes data from League of Legends Wiki</span>
             </div>
             <div className="mb-4 flex flex-col">
               <h4>Vercel Hosting</h4>
-              <span>Make app publicly accessible</span>
+              {/* <span>Make app publicly accessible</span> */}
             </div>
             <div className="mb-4 flex flex-col">
               <h4>Tailwind CSS</h4>
-              <span>Style UI elements</span>
+              {/* <span>Style UI elements</span> */}
             </div>
           </section>
           <section className="">
