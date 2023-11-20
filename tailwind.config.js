@@ -12,7 +12,8 @@ module.exports = {
     extend: {
       screens: {
         'desktop': '1480px',
-        'desktop-xl': '2380px'
+        'desktop-xl': '2380px',
+        '3xl': '1680px'
       },
       keyframes: {
         "fade-in": {

@@ -46,7 +46,7 @@ function Carousel(props: Props) {
     return (
         <div className="w-full h-full relative overflow-hidden">
             {boundingBox !== null ?
-                <div className="h-full flex relative" style={{ transform: `translateX(${boundingBox.width * imageIndex * -1}px)` }}>
+                <div className="h-full flex relative" style={{ transition: 'transform 0.5s', transform: `translateX(${boundingBox.width * imageIndex * -1}px)` }}>
                     {props.imagePaths.map((image, idx) => {
                         // return <Image key={idx} src={image} width={boundingBox.width} height={boundingBox.height} alt="Project screenshot" style={{ objectFit: 'cover', imageRendering: 'auto', height: '100%' }}></Image>
                         return <Image key={idx} src={image} fill alt="Project screenshot" placeholder="blur" blurDataURL={getBlurPath(image)}  style={{ objectFit: 'cover', imageRendering: 'auto', transform: `translateX(${boundingBox.width*idx}px)`}}></Image>

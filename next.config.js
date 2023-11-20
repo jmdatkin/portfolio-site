@@ -6,6 +6,18 @@ const nextConfig = {
   },
   typescript: {
     ignoreBuildErrors: true
+  },
+  async rewrites() {
+    return [
+      {
+        source: '/projects/experiments/:site',
+        destination: '/experiments/:site/index.html'
+      }
+      // {
+      //   source: '/projects/experiments/:site*',
+      //   destination: '/sites/:site*'
+      // }
+    ]
   }
 }
 

@@ -35,8 +35,11 @@ export default function About() {
                         <Project title="Fake Instagram Post Generator" href="https://fake-instagram-post-generator.vercel.app/" slug="fake-instagram-post-generator" tech={['Svelte', 'html2canvas', 'Vercel Hosting']}>
                             Tool to generate screenshots of Instagram posts with user-generated content
                         </Project>
+                        {/* <Project title="Experiments🚧" href="/projects/experiments" slug="experiments">
+                            Experimental web pages/proof of concepts
+                        </Project> */}
                         <Project title="Portfolio Site" href="/" slug="" disabled tech={['Next.js', 'Tailwind CSS']}>
-                            You&apos;re looking at it!
+                            {/* You&apos;re looking at it! */}
                         </Project>
                         <div className="h-full !bg-zinc-200 flex flex-col items-center justify-around text-center">
                             <span className="text-zinc-400">
