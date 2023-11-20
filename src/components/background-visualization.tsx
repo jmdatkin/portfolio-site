@@ -56,7 +56,6 @@ export default function BackgroundVisualization() {
             renderer.render(scene.current!, camera.current!);
         }
 
-
         scene.current = new THREE.Scene();
 
         camera.current = new THREE.PerspectiveCamera(70, width / height, 0.01, 10);
@@ -68,22 +67,17 @@ export default function BackgroundVisualization() {
 
         cubes.position.x = -2.8;//-m*CUBE_SIZE;
 
-        // cubes.forEach(c => scene.add(c));
         scene.current.add(cubes);
         const light = new THREE.PointLight(0x40404a, 1000, 100); // soft white light
         const light2 = new THREE.PointLight(0x40404a, 10000, 100); // soft white light
         light.position.x += 3;
         light2.position.y -= 10;
-        // const hemiLight = new THREE.HemisphereLight( 0x40404a, 0xffffff, 0.01);
         scene.current.add(light, light2);
 
-
-        // animation
 
         camera.current.rotation.x = -0.5;
         camera.current.rotation.y = 0.5;
         camera.current.rotation.z = 0.5;
-
 
         const renderer = new THREE.WebGLRenderer({ antialias: true });
         renderer.setSize(width, height);
@@ -91,16 +85,15 @@ export default function BackgroundVisualization() {
         window.addEventListener('resize', setRendererDims);
 
         renderer.render(scene.current!, camera.current!);
-        function animation(time) {
+
+        const animation: XRFrameRequestCallback = (time) => {
 
             cubes.children.forEach((c, idx) => c.position.z = (Math.sin(time / 2000 + idx / 10) + Math.cos(idx) / 10) / 5);
-            // mesh.rotation.x = time / 2000;
-            // mesh.rotation.y = time / 1000;
-
             renderer.render(scene.current!, camera.current!);
-
         }
+
         renderer.setAnimationLoop(animation);
+        
         if (rootElRef.current)
             rootElRef.current.appendChild(renderer.domElement);
 

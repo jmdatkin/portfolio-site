@@ -1,12 +1,12 @@
-import Animated from "@/components/Animated";
-import PostBody from "@/components/PostBody";
+import Animated from "@/components/animated";
+import PostBody from "@/components/post-body";
 import Layout from "@/components/layout";
 import Post from "@/types/post";
 import { m } from "framer-motion";
 import Head from "next/head";
 import { getAllPosts, getPostBySlug } from "../../../lib/api";
 import markdownToHtml from "../../../lib/markdownToHtml";
-import PostHeader from "@/components/PostHeader";
+import PostHeader from "@/components/post-header";
 
 type Params = {
     params: {

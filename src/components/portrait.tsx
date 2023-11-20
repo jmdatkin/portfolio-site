@@ -1,8 +1,8 @@
 import Image from "next/image";
 
-function Portrait() {
+function Portrait(props: any) {
     return (
-        <Image src="/portrait.jpg" fill alt="A headshot picture of me" className="opacity-80"
+        <Image {...props} src="/portrait.jpg" fill alt="A headshot picture of me" className=""
             style={{ objectFit: "cover" }}></Image>
     );
 }

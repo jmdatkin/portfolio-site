@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { IBM_Plex_Mono, Inter } from 'next/font/google'
+import { IBM_Plex_Mono, Inter, Permanent_Marker } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import Project from '@/components/project'
 import Portrait from '@/components/portrait'
@@ -14,6 +14,7 @@ import ButtonLink from '@/components/button-link'
 
 const inter = Inter({ subsets: ['latin'] })
 const ibmPlexMono = IBM_Plex_Mono({ subsets: ['latin'], weight: ["400", "500"] });
+const permanentMarker = Permanent_Marker({ subsets: ['latin'], weight: "400" });
 
 export default function Home() {
   return (
@@ -29,12 +30,13 @@ export default function Home() {
         <div className="w-full h-full z-[100] snap-y">
           <section className="w-full h-full relative snap-start">
             <div className='w-full h-full absolute bg-gradient-to-t from-black z-[-1]'></div>
-            <div className='grid grid-cols-1 md:grid-cols-2 w-full h-full p-16'>
+            <div className='grid grid-cols-1 lg:grid-cols-2 w-full h-full p-24'>
               {/* <div className='flex w-full h-full z-[100] relative'> */}
               <div className="flex flex-col justify-center items-center">
                 <div className="leading-loose flex flex-col gap-4">
-                  <h4 className={`uppercase tracking-tight dark:text-zinc-500 ${ibmPlexMono.className}`}>Hi, I'm Julian.</h4>
-                  <h1 className="leading-tight">Clean, performant code. Beautiful design.</h1>
+                  <h4 className={`uppercase tracking-tight dark:text-zinc-500 ${ibmPlexMono.className}`}>Hi, I'm Julian. I write apps with</h4>
+                  {/* <h1 className="leading-tight"><span className={`${permanentMarker.className} text-fuchsia-400 dark:text-fuchsia-400`}>Clean, </span> <span className={`${permanentMarker.className} text-emerald-400 dark:text-teal-400`}>performant </span> code. Beautiful design.</h1> */}
+                  <h1 className="leading-none text-center md:leading-tight md:text-left">Clean, performant code. Stunning design.</h1>
                   <ButtonLink href="/about">Work with me</ButtonLink>
                   <ButtonLink href="#projects">Get in touch</ButtonLink>
                 </div>
@@ -47,8 +49,16 @@ export default function Home() {
               <div></div>
             </div>
           </section>
-          <section className="w-full h-full bg-black snap-start p-16" id="projects">
-            askdfjalsdf
+          <section className="w-full h-full flex flex-col items-center bg-black snap-start p-16" id="projects">
+            <div className="grid grid-cols-1 lg:grid-cols-2 w-1/2 h-full p-18">
+              <div className="relative w-[400px] h-[600px] saturate-[.75]">
+                <Portrait ></Portrait>
+
+              </div>
+              <div className="flex flex-col">
+                <SocialButtons></SocialButtons>
+              </div>
+            </div>
           </section>
         </div>
 

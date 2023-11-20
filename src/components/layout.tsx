@@ -11,7 +11,7 @@ function Layout({ children }) {
 
   return (
     <>
-      <div className={`w-full h-full flex items-center justify-center theme-responsive-bg`}>
+      <div className={`w-full h-full flex items-center justify-center theme-responsive-bg overflow-hidden`}>
         <div className="flex flex-col h-full w-full z-[100] relative">
           {/* Header */}
           <div className="flex min-h-[5rem] border-b z-[100]">
