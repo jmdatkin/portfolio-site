@@ -113,6 +113,6 @@ export default function BackgroundVisualization() {
 
 
     return (
-        <div className="w-full h-full absolute inset-0 theme-responsive-bg" ref={rootElRef}></div>
+        <div className="w-full h-full fixed pointer-events-none !z-[-1] theme-responsive-bg" ref={rootElRef}></div>
     )
 };
