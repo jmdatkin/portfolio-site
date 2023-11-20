@@ -1,6 +1,6 @@
 import Animated from "@/components/Animated";
 import PostBody from "@/components/PostBody";
-import Layout from "@/components/Layout";
+import Layout from "@/components/layout";
 import Post from "@/types/post";
 import { m } from "framer-motion";
 import Head from "next/head";

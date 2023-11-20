@@ -2,13 +2,13 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
-import Project from '@/components/Project'
-import Portrait from '@/components/Portrait'
-import Animated from '@/components/Animated'
+import Project from '@/components/project'
+import Portrait from '@/components/portrait'
+import Animated from '@/components/animated'
 import { getAllPosts } from '../../../lib/api'
 import Post from '@/types/post'
 import Link from 'next/link'
-import DateFormatter from '@/components/DateFormatter'
+import DateFormatter from '@/components/date-formatter'
 
 const inter = Inter({ subsets: ['latin'] })
 
