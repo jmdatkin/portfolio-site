@@ -5,7 +5,7 @@ import { useRouter } from "next/router";
 import { useEffect, useRef, useState } from "react";
 
 type Props = {
-    setDarkMode: Function
+    // setDarkMode: Function
 }
 
 function Navbar(props: Props) {
