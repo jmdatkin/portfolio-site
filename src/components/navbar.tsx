@@ -31,7 +31,7 @@ function Navbar() {
 
     return (
         <>
-            <nav className="hidden relative z-[9000] sm:flex h-full flex items-center px-3 justify-around md:justify-start">
+            <nav className="hidden sticky z-[9000] sm:flex h-full flex items-center px-3 justify-around md:justify-start">
                 {links.current.map((link, idx) => {
                     // const active = router.pathname === link.href;
                     const re = new RegExp(`^${link.href}(/.+)?$`);

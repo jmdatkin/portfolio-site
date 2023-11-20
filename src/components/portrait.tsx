@@ -2,8 +2,10 @@ import Image from "next/image";
 
 function Portrait(props: any) {
     return (
-        <Image {...props} src="/portrait.jpg" fill alt="A headshot picture of me" className=""
-            style={{ objectFit: "cover" }}></Image>
+        <div className="rounded-full">
+            <Image {...props} src="/portrait.jpg" fill alt="A headshot picture of me"
+                style={{ objectFit: "cover" }}></Image>
+        </div>
     );
 }
 

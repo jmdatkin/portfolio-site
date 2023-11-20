@@ -93,7 +93,7 @@ export default function BackgroundVisualization() {
         }
 
         renderer.setAnimationLoop(animation);
-        
+
         if (rootElRef.current)
             rootElRef.current.appendChild(renderer.domElement);
 
@@ -106,6 +106,6 @@ export default function BackgroundVisualization() {
 
 
     return (
-        <div className="w-full h-full fixed pointer-events-none z-[-1] theme-responsive-bg" ref={rootElRef}></div>
+        <div className="w-screen h-screen fixed right-5 pointer-events-none z-[-1] theme-responsive-bg" ref={rootElRef}></div>
     )
 };
