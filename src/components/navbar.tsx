@@ -43,7 +43,7 @@ function Navbar() {
                 <button className="text-3xl border border-transparent hover:border-zinc-200 p-2 px-3 mx-1 active:bg-zinc-100 rounded" onClick={() => setMobileNavOpen(!mobileNavOpen)}><FontAwesomeIcon icon={faBars}></FontAwesomeIcon></button>
             </div>
             <div className={`${mobileNavOpen ? 'pointer-events-auto scale-100 opacity-1' : 'pointer-events-none scale-95 opacity-0'} fixed z-[999] h-full w-full bg-white sm:hidden transition-all ease duration-[0.4s]`}>
-                <nav className={`relative z-[9000] flex h-full w-full bg-white flex flex-col text-2xl`}>
+                <nav className={`relative z-[9000] flex h-full w-full flex flex-col text-2xl`}>
                     {links.current.map((link, idx) => {
                         // const active = router.pathname === link.href;
                         const re = new RegExp(`^${link.href}(/.+)?$`);

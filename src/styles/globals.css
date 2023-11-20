@@ -6,12 +6,18 @@
   .w-screen-layout-offset {
     @apply min-w-[4rem] xl:min-w-[18rem] desktop:min-w-[24rem] desktop-xl:min-w-[32rem];
   }
+
+  .theme-responsive-bg {
+    @apply bg-zinc-100 dark:bg-black;
+  }
 }
 
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  @apply border-zinc-400 dark:border-zinc-800;
+  @apply text-zinc-900 dark:text-zinc-100;
   /* transition: all 0.5s; */
 }
 
@@ -31,9 +37,8 @@ body {
   @apply h-full;
 }
 
-
 body {
-  @apply bg-zinc-100;
+  /* @apply bg-zinc-100; */
 }
 
 h1 {

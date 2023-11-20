@@ -19,7 +19,8 @@ export default function About() {
                     <h1 className={`tracking-tight`}>Projects</h1>
                 </header>
                 <section className="border-t border-b">
-                    <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 [&>*]:bg-white gap-px bg-zinc-200">
+                    {/* <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 [&>*]:bg-white gap-px bg-zinc-200"> */}
+                    <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px">
                         <Project title="Grid Chat" slug="grid-chat" href="https://grid-chat-app.web.app/" tech={['React.js', 'Firebase Realtime Database', 'Tailwind CSS']}>
                             Infinite 2D spatial messaging board
                         </Project>
