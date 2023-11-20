@@ -1,15 +1,8 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
-import Project from '@/components/project'
-import Portrait from '@/components/portrait'
 import Animated from '@/components/animated'
 import Carousel from '@/components/carousel'
-import { useEffect, useRef, useState } from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faRocket } from '@fortawesome/free-solid-svg-icons'
-import Link from 'next/link'
+import { useRef } from 'react'
 import ProjectLaunchButton from '@/components/project-launch-button'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -39,7 +32,7 @@ export default function GridChat() {
             </div>
           </header>
           <section ref={carouselWrapperRef} className="h-[500px] md:h-full">
-            <Carousel wrapper={carouselWrapperRef}  imagePaths={['/projects/grid-chat/1.png', '/projects/grid-chat/2.png', '/projects/grid-chat/3.png']}></Carousel>
+            <Carousel wrapper={carouselWrapperRef} imagePaths={['/projects/grid-chat/1.png', '/projects/grid-chat/2.png', '/projects/grid-chat/3.png']}></Carousel>
           </section>
           <section className="w-full p-6 flex flex-col">
             <h3 className="mb-4">Built With</h3>

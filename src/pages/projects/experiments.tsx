@@ -1,16 +1,7 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
-import Project from '@/components/project'
-import Portrait from '@/components/portrait'
 import Animated from '@/components/animated'
-import Carousel from '@/components/carousel'
-import { useEffect, useRef, useState } from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faRocket } from '@fortawesome/free-solid-svg-icons'
-import Link from 'next/link'
-import ProjectLaunchButton from '@/components/project-launch-button'
+import { useRef } from 'react'
 import Experiment from '@/components/experiment'
 
 const inter = Inter({ subsets: ['latin'] })
