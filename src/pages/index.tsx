@@ -22,7 +22,14 @@ export default function Home() {
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <link rel="icon" href="/favicon.ico" />
         </Head>
-        <header className="flex flex-col w-full justify-around items-center py-4">
+        <div className="min-w-[900px] min-h-[600px] absolute right-[7%] top-[20%] rotate-[-45deg] scale-[2] z-[90]">
+          <Image alt="" src="/waves.svg"
+
+        // width={900}
+        // height={600}
+            fill={true}></Image>
+        </div>
+        <header className="relative z-[100] flex flex-col w-full justify-around items-center py-4">
           <div className="flex flex-col md:w-3/4 items-center md:text-center mx-auto p-6 py-8">
             <div>
               <h1 className={`tracking-tight desktop-xl:text-8xl text-zinc-800`}>Julian Atkin</h1>
@@ -34,7 +41,7 @@ export default function Home() {
             </div>
           </div>
         </header>
-      
+
       </Animated>
     </>
   )

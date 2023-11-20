@@ -19,14 +19,14 @@ function Layout({children}) {
           <div className="flex flex-col h-full">
             <div className="flex min-h-[5rem] border-b">
               <div className="w-screen-layout-offset border-r hidden 3xl:block bg-zinc-100"></div>
-              <div className="flex-grow items-center">
+              <div className="flex-grow bg-white items-center">
                 <Navbar></Navbar>
               </div>
               <div className="w-screen-layout-offset border-l hidden 3xl:block bg-zinc-100"></div>
             </div>
             <div className="flex flex-grow">
               <div className="w-screen-layout-offset border-r hidden 3xl:block bg-zinc-100"></div>
-              <main className={`flex-grow bg-white`}>
+              <main className={`flex-grow overflow-hidden relative bg-white`}>
                 {children}
               </main>
               <div className="w-screen-layout-offset border-l hidden 3xl:block bg-zinc-100"></div>
