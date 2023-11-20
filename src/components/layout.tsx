@@ -21,12 +21,12 @@ function Layout({ children }) {
           </div>
           {/* Main */}
           <div className="flex flex-grow">
-            <main className={`flex-grow overflow-x-hidden relative z-[100]`}>
+            <main className={`flex-grow overflow-x-hidden relative `}>
               {children}
             </main>
           </div>
           {/* Footer */}
-          <div className="flex min-h-[5rem] border-t z-[100] theme-responsive-bg">
+          <div className="flex min-h-[5rem] border-t theme-responsive-bg">
             <div className="flex-grow flex flex-col text-center h-full items-center justify-around"><span className="text-zinc-600">2023 Julian Atkin</span></div>
           </div>
         </div>

@@ -26,28 +26,31 @@ export default function Home() {
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <BackgroundVisualization></BackgroundVisualization>
-        <section className="w-full h-full">
-          <div className='grid grid-cols-1 md:grid-cols-2 w-full h-full z-[100] p-16'>
-            {/* <div className='flex w-full h-full z-[100] relative'> */}
-            <div className="flex flex-col justify-center items-center">
-              <div className="leading-loose flex flex-col gap-4">
-                <h4 className={`uppercase tracking-tight dark:text-zinc-500 ${ibmPlexMono.className}`}>Hi, I'm Julian.</h4>
-                <h1>Clean, performant code. Beautiful design.</h1>
-                <ButtonLink href="/about">Work with me</ButtonLink>
-                <ButtonLink href="#projects">Get in touch</ButtonLink>
-              </div>
-              {/* <h1 className={`tracking-tight  text-zinc-800 dark:text-zinc-100 whitespace-nowrap`}>Julian Atkin</h1> */}
-              {/* <h2 className="mb-4 text-zinc-800 dark:text-zinc-100">Full Stack Engineer</h2>
+        <div className="w-full h-full z-[100] snap-y">
+          <section className="w-full h-full relative snap-start">
+            <div className='w-full h-full absolute bg-gradient-to-t from-black z-[-1]'></div>
+            <div className='grid grid-cols-1 md:grid-cols-2 w-full h-full p-16'>
+              {/* <div className='flex w-full h-full z-[100] relative'> */}
+              <div className="flex flex-col justify-center items-center">
+                <div className="leading-loose flex flex-col gap-4">
+                  <h4 className={`uppercase tracking-tight dark:text-zinc-500 ${ibmPlexMono.className}`}>Hi, I'm Julian.</h4>
+                  <h1 className="leading-tight">Clean, performant code. Beautiful design.</h1>
+                  <ButtonLink href="/about">Work with me</ButtonLink>
+                  <ButtonLink href="#projects">Get in touch</ButtonLink>
+                </div>
+                {/* <h1 className={`tracking-tight  text-zinc-800 dark:text-zinc-100 whitespace-nowrap`}>Julian Atkin</h1> */}
+                {/* <h2 className="mb-4 text-zinc-800 dark:text-zinc-100">Full Stack Engineer</h2>
               <p>
                 Rock-solid code meets beautiful design.
               </p> */}
+              </div>
+              <div></div>
             </div>
-            <div></div>
-          </div>
-        </section>
-        <section className="w-full h-full bg-[rgba(0,0,0,0.5)]" id="projects">
-          askdfjalsdf
-        </section>
+          </section>
+          <section className="w-full h-full bg-black snap-start p-16" id="projects">
+            askdfjalsdf
+          </section>
+        </div>
 
         {/* <header className="relative z-[100] flex flex-col w-full justify-around items-center py-4">
           <div className="flex flex-col md:w-3/4 items-center md:text-center mx-auto p-6 py-8">
