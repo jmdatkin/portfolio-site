@@ -19,10 +19,10 @@ export default function About() {
                     <meta name="viewport" content="width=device-width, initial-scale=1" />
                     <link rel="icon" href="/favicon.ico" />
                 </Head>
-                <header className="p-6 py-8 mb-6">
-                    <h1 className={`tracking-tight`}>Resume</h1>
-                </header>
-                <div className="grid grid-cols-1 md:grid-cols-2 border-t border-b bg-zinc-200 gap-px [&>*]:bg-white">
+                <section className="w-full relative snap-center">
+                    <h1 className={`text-center tracking-tight`}>Resume</h1>
+                </section>
+                <div className="grid grid-cols-1 md:grid-cols-2 border-t border-b  gap-px ">
                     {/* <section className="">
                         <h3 className="p-6 pb-2">Work Experience</h3>
                         <div className="w-full p-6">
@@ -101,20 +101,20 @@ export default function About() {
                         <h3 className="p-6 pb-2">Skills</h3>
                         <div className="w-full p-6">
                             <div className="flex justify-between">
-                            <ul className='grow space-y-2'>
-                                <li>React.js</li>
-                                <li>Vue.js</li>
-                                <li>Vanilla JS</li>
-                                <li>Node.js</li>
-                                <li>CSS</li>
-                            </ul>
-                            <ul className='grow space-y-2'>
-                                <li>MongoDB</li>
-                                <li>SQL</li>
-                                <li>AWS</li>
-                                <li>Firebase</li>
-                                <li>Linux</li>
-                            </ul>
+                                <ul className='grow space-y-2'>
+                                    <li>React.js</li>
+                                    <li>Vue.js</li>
+                                    <li>Vanilla JS</li>
+                                    <li>Node.js</li>
+                                    <li>CSS</li>
+                                </ul>
+                                <ul className='grow space-y-2'>
+                                    <li>MongoDB</li>
+                                    <li>SQL</li>
+                                    <li>AWS</li>
+                                    <li>Firebase</li>
+                                    <li>Linux</li>
+                                </ul>
                             </div>
                         </div>
                     </section>

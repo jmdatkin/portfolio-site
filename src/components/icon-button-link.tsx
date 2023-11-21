@@ -13,9 +13,9 @@ export default function IconButtonLink(props: IconButtonLinkProps) {
     const { icon, href, className, ...restProps } = props;
 
     return (
-        <Link target="_blank" href={href} className={`${className ? className : ''} rounded-full outline-none w-12 h-12 flex justify-center items-center x!dark:text-zinc-900`} {...restProps}>
+        <Link target="_blank" href={href} className={`${className ? className : ''} transition duration-[0.2s] rounded-full outline-none w-10 h-10 flex justify-center items-center  hover:bg-zinc-700 active:bg-zinc-800 !dark:text-zinc-900`} {...restProps}>
             <span className="dark:text-zinc-900">
-                {props.icon({className: "!dark:text-zinc-900",size: 26})}
+                {props.icon({className: "[&>*]:dark:text-slate-100",size: 26})}
             </span>
         </Link>
     )

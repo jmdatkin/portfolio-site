@@ -25,6 +25,7 @@ export default function BackgroundVisualization() {
         const geometry = new THREE.BoxGeometry(options.current.cubeSize, options.current.cubeSize, 10);
         // const material = new THREE.MeshNormalMaterial();
         const material = new THREE.MeshLambertMaterial();
+        // const material = new THREE.MeshPhongMaterial({shininess: 80});
 
         const makeMesh = () => new THREE.Mesh(geometry, material);
 
@@ -57,6 +58,8 @@ export default function BackgroundVisualization() {
         }
 
         scene.current = new THREE.Scene();
+        // scene.current.background = new THREE.Color("#facc15");
+        scene.current.background = new THREE.Color("black");
 
         camera.current = new THREE.PerspectiveCamera(70, width / height, 0.01, 10);
         // const camera = new THREE.OrthographicCamera(width / -2, width / 2, height / 2, height / -2, 1, 100);
@@ -106,6 +109,6 @@ export default function BackgroundVisualization() {
 
 
     return (
-        <div className="w-screen h-screen fixed right-5 pointer-events-none z-[-1] theme-responsive-bg" ref={rootElRef}></div>
+        <div className="w-screen h-screen fixed pointer-events-none z-[-1] theme-responsive-bg" ref={rootElRef}></div>
     )
 };
