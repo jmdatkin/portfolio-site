@@ -20,6 +20,7 @@ import { FaChevronRight } from 'react-icons/fa'
 import { useRef } from 'react'
 import Footer from '@/components/footer'
 import Feature from '@/components/feature'
+import Carousel from '@/components/carousel'
 
 const inter = Inter({ subsets: ['latin'] })
 const ibmPlexMono = IBM_Plex_Mono({ subsets: ['latin'], weight: ["400", "500"] });
@@ -28,6 +29,10 @@ const permanentMarker = Permanent_Marker({ subsets: ['latin'], weight: "400" });
 export default function Home() {
 
   const portraitSectionRef = useRef(null);
+
+  const croppyCarouselWrapperRef = useRef(null);
+  const gridChatCarouselWrapperRef = useRef(null);
+  const lolAbilityQuizCarouselWrapperRef = useRef(null);
 
   return (
     <>
@@ -114,15 +119,15 @@ export default function Home() {
             </div>
           </section>
           <section className="w-full py-36 flex flex-col items-center bg-black snap-start p-16" id="projects">
-            <h1 className="py-24">What I Do</h1>
+            <h1 className="py-24 text-center">What I Do</h1>
             {/* <h1 className="py-24 bg-clip-text dark:text-transparent bg-gradient-to-tl from-slate-300 to-slate-50">What I Do</h1> */}
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 [&>*]:p-4 xl:p-18 xl:px-48">
               <Feature icon={BsLayersFill} title="Responsive Web Design">
-                Mobile-first, responsive sites that perform well and look good on any device. 
+                Mobile-first, responsive sites that perform well and look good on any device.
               </Feature>
               <Feature icon={FaRocket} title="Rock-Solid Backend">
-                I combine six years of experience to build you a solid, fast, elite-class back-end service for your data.
+                I combine six years of experience to build you a solid, fast, high-performance back-end service for your data.
               </Feature>
               <Feature icon={IoPeople} title="Team Member">
                 I'm personally dedicated to providing you world-class development services.
@@ -132,59 +137,78 @@ export default function Home() {
                 I use cutting-edge tools and utilities. Proficient in running deployments on bare-metal, or cloud.
               </Feature>
               <Feature icon={BsLightningFill} title="Rapid Development">
-                I proactively tackle problems and hurdle obstacles, inventing unique and creative solutions tailored to your needs. 
+                I proactively tackle problems and hurdle obstacles, inventing unique and creative solutions tailored to your needs.
               </Feature>
               <Feature icon={FaPalette} title="First-Class Design">
                 I don't make exceptions when it comes to good design. I strive for an optimal user experience at all times.
               </Feature>
             </div>
+          </section>
+          <section className="w-full py-36 px-0 md:px-16 flex flex-col items-center bg-black snap-start" id="projects">
+            <h1 className="py-24 text-center">My Work</h1>
+            {/* <h1 className="py-24 bg-clip-text dark:text-transparent bg-gradient-to-tl from-slate-300 to-slate-50">What I Do</h1> */}
 
-            {/* <div className="grid grid-cols-1 lg:grid-cols-3 w-full xl:p-18 xl:px-48">
-              <div className="flex flex-col p-8 items-center border-b lg:border-r lg:border-b-0">
-
-
-                <h3 className="mb-10"><BsLayersFill size={56}></BsLayersFill></h3>
-                <ul className="text-xl">
-                  <li>Responsive web design</li>
-                  <li>UI/UX Strategy</li>
-                  <li>Prototyping</li>
-                </ul>
-              </div>
-              <div className="flex flex-col p-8 items-center border-b lg:border-r lg:border-b-0">
-                <h3 className="mb-10"><FaGears size={56}></FaGears></h3>
-                <ul className="text-xl">
-                  <li>Build <strong>fast</strong>, <strong>reliable</strong> back-end services 🚀</li>
-                  <li>Rapid, aggressive iterative development ⚡</li>
-                  <li>Communicate with you to meet your business needs 👷‍♂️</li>
-                </ul>
-              </div>
-              <div className="flex flex-col p-8 items-center">
-                <h3 className="mb-10"><FaCode size={56}></FaCode></h3>
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-                  <ul className="text-xl">
-                    <li>TypeScript</li>
-                    <li>Next.js</li>
-                    <li>React.js</li>
-                    <li>Vue.js</li>
-                    <li>HTML/CSS</li>
-                    <li>Node.js</li>
-                  </ul>
-                  <ul className="text-xl">
-                    <li>PHP</li>
-                    <li>SQL</li>
-                    <li>MongoDB</li>
-                    <li>Docker</li>
-                    <li>AWS</li>
-                    <li>Linux</li>
-                    <li>Nginx/Apache</li>
-                  </ul>
+            <div className="flex flex-col gap-16 w-full md:w-auto">
+              <article className="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <div ref={croppyCarouselWrapperRef} className="max-w-full md:max-w-[550px] h-[450px] relative border border-slate-400">
+                  <Carousel wrapper={croppyCarouselWrapperRef} imagePaths={['/projects/croppy/1.png', '/projects/croppy/2.png']}></Carousel>
                 </div>
-              </div>
-            </div> */}
+                <div className="row-start-1 md:row-auto px-16 md:px-0 flex flex-col justify-between">
+                  <div className="flex flex-col">
+                    <h4 className="uppercase tracking-tighter  dark:text-zinc-700">Web Application</h4>
+                    <h2>Croppy</h2>
+                    <p className="dark:text-slate-400">In-browser image cropping and compression tool</p>
+                    <span className='flex items-center gap-2'>
+                      <FaGears size={32}></FaGears>
+                      <h4>Built with</h4>
+                    </span>
+                  </div>
+                  <ButtonLink target="_blank" href="https://croppy.vercel.app/">Go to project</ButtonLink>
+                </div>
+              </article>
+
+              <article className="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <div ref={gridChatCarouselWrapperRef} className="max-w-full md:max-w-[550px] h-[450px] relative border border-slate-400">
+                  <Carousel wrapper={gridChatCarouselWrapperRef} imagePaths={['/projects/grid-chat/1.png', '/projects/grid-chat/2.png', '/projects/grid-chat/3.png']}></Carousel>
+                </div>
+                <div className="row-start-1 md:row-auto px-16 md:px-0 flex flex-col justify-between">
+                  <div className="flex flex-col">
+                    <h4 className="uppercase tracking-tighter dark:text-zinc-700">Web Application</h4>
+                    <h2>Grid Chat</h2>
+                    <p>Real-time communication on an infinite scrollable 2D grid</p>
+                    <span className='flex items-center gap-2'>
+                      <FaGears size={32}></FaGears>
+                      <h4>Built with</h4>
+                    </span>
+                  </div>
+                  <ButtonLink target="_blank" href="https://grid-chat-app.web.app/">Go to project</ButtonLink>
+                </div>
+              </article>
+
+              <article className="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <div ref={lolAbilityQuizCarouselWrapperRef} className="max-w-full md:max-w-[550px] h-[450px] relative border border-slate-400">
+                  <Carousel wrapper={lolAbilityQuizCarouselWrapperRef} imagePaths={['/projects/lol-ability-quiz/1.png', '/projects/lol-ability-quiz/2.png', '/projects/lol-ability-quiz/3.png']}></Carousel>
+                </div>
+                <div className="row-start-1 md:row-auto px-16 md:px-0 flex flex-col justify-between">
+                  <div className="flex flex-col">
+                    <h4 className="uppercase tracking-tighter dark:text-zinc-700">Web Application</h4>
+                    <h2>League of Legends Ability Quiz</h2>
+                    <p>Interactive quiz on abilities from the online game League of Legends</p>
+                    <span className='flex items-center gap-2'>
+                      <FaGears size={32}></FaGears>
+                      <h4>Built with</h4>
+                    </span>
+                  </div>
+                  <ButtonLink target="_blank" href="https://lol-ability-quiz.vercel.app/">Go to project</ButtonLink>
+                </div>
+              </article>
+
+            </div>
+
           </section>
           <section className="w-full flex flex-col items-center relative bg-black snap-start p-16" id="projects">
             {/* <div className='w-full h-full top-0 absolute bg-gradient-to-b from-black z-[-1]'></div> */}
-            <h3 className="py-16">📑Currently seeking full-time work in <u>full stack development</u> or <u>front-end development</u>!📑</h3>
+            <h3 className="py-16 text-center">📑Currently seeking full-time work in <u>full stack development</u> or <u>front-end development</u>!📑</h3>
             <span className="text-5xl animate-bounce">👇</span>
             <div className="pt-16 border-dotted flex flex-col items-center">
               <span className="flex items-center gap-4">
@@ -203,20 +227,6 @@ export default function Home() {
           </section>
           <Footer></Footer>
         </div >
-
-        {/* <header className="relative z-[100] flex flex-col w-full justify-around items-center py-4">
-          <div className="flex flex-col md:w-3/4 items-center md:text-center mx-auto p-6 py-8">
-            <div>
-              <h1 className={`tracking-tight  text-zinc-800 dark:text-zinc-100`}>Julian Atkin</h1>
-              <h2 className="mb-4 text-zinc-800 dark:text-zinc-100">Full Stack Engineer</h2>
-            </div>
-            <p className="my-12 animate-fade-in text-zinc-800 text-lg">Hi, I&apos;m Julian! <strong>My mission</strong> is to build accessible and usable <strong>web technologies</strong> that make the world a <strong>better place</strong>.</p>
-            <div className="mb-16 flex flex-col items-center">
-              <SocialButtons></SocialButtons>
-            </div>
-          </div>
-        </header> */}
-
       </Animated >
     </>
   )

@@ -14,7 +14,7 @@ function Layout({ children }) {
       {/* <div className={`w-full h-full flex items-center theme-responsive-bg`}> */}
       <div className="flex flex-col h-full w-full z-[100] relative theme-responsive-bg">
         {/* Header */}
-        <div className="flex min-h-[5rem] border-b z-[100] sticky">
+        <div className="flex min-h-[5rem] z-[100] sticky">
           <div className="flex-grow items-center">
             <Navbar></Navbar>
           </div>
