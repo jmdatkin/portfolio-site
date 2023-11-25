@@ -157,11 +157,15 @@ export default function Home() {
                   <div className="flex flex-col">
                     <h4 className="uppercase tracking-tighter  dark:text-zinc-700">Web Application</h4>
                     <h2>Croppy</h2>
-                    <p className="dark:text-slate-400">In-browser image cropping and compression tool</p>
-                    <span className='flex items-center gap-2'>
-                      <FaGears size={32}></FaGears>
-                      <h4>Built with</h4>
-                    </span>
+                    <p className="dark:text-slate-400 mb-4">In-browser image cropping and compression tool</p>
+                    <h4 className="dark:text-slate-300">Built with</h4>
+                    <ul className="dark:text-slate-200">
+                      <li>Vue.js</li>
+                      <li>Sharp</li>
+                      <li>Firebase Firestore</li>
+                      <li>Vercel Serverless Functions</li>
+                      <li>Tailwind CSS</li>
+                    </ul>
                   </div>
                   <ButtonLink target="_blank" href="https://croppy.vercel.app/">Go to project</ButtonLink>
                 </div>
@@ -175,11 +179,13 @@ export default function Home() {
                   <div className="flex flex-col">
                     <h4 className="uppercase tracking-tighter dark:text-zinc-700">Web Application</h4>
                     <h2>Grid Chat</h2>
-                    <p>Real-time communication on an infinite scrollable 2D grid</p>
-                    <span className='flex items-center gap-2'>
-                      <FaGears size={32}></FaGears>
-                      <h4>Built with</h4>
-                    </span>
+                    <p className="dark:text-slate-400 mb-4">Real-time communication on an infinite scrollable 2D grid</p>
+                    <h4 className="dark:text-slate-300">Built with</h4>
+                    <ul className="dark:text-slate-200">
+                      <li>React.js</li>
+                      <li>Firebase Realtime Database</li>
+                      <li>Tailwind CSS</li>
+                    </ul>
                   </div>
                   <ButtonLink target="_blank" href="https://grid-chat-app.web.app/">Go to project</ButtonLink>
                 </div>
@@ -193,11 +199,14 @@ export default function Home() {
                   <div className="flex flex-col">
                     <h4 className="uppercase tracking-tighter dark:text-zinc-700">Web Application</h4>
                     <h2>League of Legends Ability Quiz</h2>
-                    <p>Interactive quiz on abilities from the online game League of Legends</p>
-                    <span className='flex items-center gap-2'>
-                      <FaGears size={32}></FaGears>
-                      <h4>Built with</h4>
-                    </span>
+                    <p className="dark:text-slate-400 mb-4">Interactive quiz on abilities from the online game League of Legends</p>
+                    <h4 className="dark:text-slate-300">Built with</h4>
+                    <ul className="dark:text-slate-200">
+                      <li>Next.js</li>
+                      <li>Cheerio</li>
+                      <li>MongoDB</li>
+                      <li>Tailwind CSS</li>
+                    </ul>
                   </div>
                   <ButtonLink target="_blank" href="https://lol-ability-quiz.vercel.app/">Go to project</ButtonLink>
                 </div>
