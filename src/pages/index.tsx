@@ -46,7 +46,7 @@ export default function Home() {
         <BackgroundVisualization></BackgroundVisualization>
         <div className="w-full z-[100] snap-y">
 
-          <section className="w-full h-screen relative snap-center">
+          <section className="w-full h-screen relative snap-center" id="home">
             <div className='w-full h-full absolute bg-gradient-to-t from-black z-[-1]'></div>
             <div className='grid grid-cols-1 lg:grid-cols-2 w-full h-full p-4 md:p-24'>
               {/* <div className='flex w-full h-full z-[100] relative'> */}

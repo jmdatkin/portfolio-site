@@ -13,7 +13,7 @@ function Navbar() {
     const links = useRef([
         {
             name: "Home",
-            href: "/",
+            href: "#home",
         },
         {
             name: "Projects",
@@ -23,10 +23,10 @@ function Navbar() {
             name: "Resume",
             href: "#resume"
         },
-        {
-            name: "About",
-            href: "/about"
-        }
+        // {
+        //     name: "About",
+        //     href: "/about"
+        // }
     ]);
 
     return (
