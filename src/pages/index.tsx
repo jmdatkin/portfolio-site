@@ -80,7 +80,7 @@ export default function Home() {
               <div></div>
             </div>
           </section>
-          <section ref={portraitSectionRef} className="w-full flex flex-col items-center bg-black snap-start p-16" id="projects">
+          <section ref={portraitSectionRef} className="w-full flex flex-col items-center bg-black snap-start p-16" >
 
             <div className="grid grid-cols-1 lg:grid-cols-2 h-full gap-12 p-18">
               <motion.div className="relative w-[clamp(250px,300px,400px)] h-[clamp(250px,300px,400px)] rounded-full saturate-[.75] justify-self-center lg:justify-self-end"
@@ -118,7 +118,7 @@ export default function Home() {
               </div>
             </div>
           </section>
-          <section className="w-full py-36 flex flex-col items-center bg-black snap-start p-16" id="projects">
+          <section className="w-full py-36 flex flex-col items-center bg-black snap-start p-16">
             <h1 className="py-24 text-center">What I Do</h1>
             {/* <h1 className="py-24 bg-clip-text dark:text-transparent bg-gradient-to-tl from-slate-300 to-slate-50">What I Do</h1> */}
 
@@ -215,6 +215,56 @@ export default function Home() {
             </div>
 
           </section>
+
+
+          <section className="w-full py-36 flex flex-col items-center bg-black snap-start p-16" id="resume">
+            <h1 className="py-24 text-center">Resume</h1>
+            {/* <h1 className="py-24 bg-clip-text dark:text-transparent bg-gradient-to-tl from-slate-300 to-slate-50">What I Do</h1> */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 [&>*]:p-4 xl:p-18 xl:px-48">
+              <div className="flex flex-col max-w-[48rem] w-full">
+                <h2>Education</h2>
+                <span className="text-2xl"><span className="text-2xl font-semibold">B.S. Computer Science</span> - University at Albany</span>
+                <span className="uppercase dark:text-slate-400">Aug 2017 - May 2021</span>
+                <p>Excelled in challenging computer science and mathematics coursework</p>
+                <p>Achieved a 3.4 GPA while balancing a demanding course load and personal projects</p>
+              </div>
+              <div className="flex flex-col max-w-[48rem] w-full">
+                <h2>Courses/Certifications</h2>
+                <span className="text-2xl"><span className="text-2xl font-semibold">B.S. Computer Science</span> - University at Albany</span>
+                <span className="uppercase dark:text-slate-400">Aug 2017 - May 2021</span>
+                <p>Excelled in challenging computer science and mathematics coursework</p>
+                <p>Achieved a 3.4 GPA while balancing a demanding course load and personal projects</p>
+              </div>
+              <div className="flex flex-col max-w-[48rem] w-full">
+                <h2>Skills</h2>
+                <span className="text-2xl"><span className="text-2xl font-semibold">B.S. Computer Science</span> - University at Albany</span>
+                <span className="uppercase dark:text-slate-400">Aug 2017 - May 2021</span>
+                <p>Excelled in challenging computer science and mathematics coursework</p>
+                <p>Achieved a 3.4 GPA while balancing a demanding course load and personal projects</p>
+              </div>
+
+              {/* <Feature icon={BsLayersFill} title="Responsive Web Design">
+                Mobile-first, responsive sites that perform well and look good on any device.
+              </Feature>
+              <Feature icon={FaRocket} title="Rock-Solid Backend">
+                I combine six years of experience to build you a solid, fast, high-performance back-end service for your data.
+              </Feature>
+              <Feature icon={IoPeople} title="Team Member">
+                I'm personally dedicated to providing you world-class development services.
+                Let's work together to build your dream app.
+              </Feature>
+              <Feature icon={FaGears} title="Technical Expertise">
+                I use cutting-edge tools and utilities. Proficient in running deployments on bare-metal, or cloud.
+              </Feature>
+              <Feature icon={BsLightningFill} title="Rapid Development">
+                I proactively tackle problems and hurdle obstacles, inventing unique and creative solutions tailored to your needs.
+              </Feature>
+              <Feature icon={FaPalette} title="First-Class Design">
+                I don't make exceptions when it comes to good design. I strive for an optimal user experience at all times.
+              </Feature> */}
+            </div>
+          </section>
+
           <section className="w-full flex flex-col items-center relative bg-black snap-start p-16" id="projects">
             {/* <div className='w-full h-full top-0 absolute bg-gradient-to-b from-black z-[-1]'></div> */}
             <h3 className="py-16 text-center">📑Currently seeking full-time work in <u>full stack development</u> or <u>front-end development</u>!📑</h3>

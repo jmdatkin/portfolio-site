@@ -17,11 +17,11 @@ function Navbar() {
         },
         {
             name: "Projects",
-            href: "/projects"
+            href: "#projects"
         },
         {
             name: "Resume",
-            href: "/resume"
+            href: "#resume"
         },
         {
             name: "About",

@@ -23,16 +23,6 @@ export default function About() {
                     <h1 className={`text-center tracking-tight`}>Resume</h1>
                 </section>
                 <div className="grid grid-cols-1 md:grid-cols-2 border-t border-b  gap-px ">
-                    {/* <section className="">
-                        <h3 className="p-6 pb-2">Work Experience</h3>
-                        <div className="w-full p-6">
-                            <p className="mb-4">
-                                <strong>Columbia County Recovery Kitchen</strong> - Full Stack Developer<br></br>
-                                Aug 2021 - Oct 2022
-                            </p>
-                            Designed and developed a database and admin console to manage records of 100+ meal recipients and drivers. 
-                        </div>
-                    </section> */}
                     <section className="">
                         <h3 className="p-6 pb-2">Education</h3>
                         <div className="w-full p-6">
