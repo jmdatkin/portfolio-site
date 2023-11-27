@@ -89,7 +89,7 @@ export default function Home() {
               >
                 <Portrait className="rounded-full "></Portrait>
               </motion.div>
-              <div className="flex flex-col justify-center gap-2">
+              <div className="flex flex-col justify-center gap-2 max-w-3xl">
                 <h1></h1>
                 <h2>Hi! I'm Julian.</h2>
                 <p>I have over six years of web development experience.</p>
@@ -122,20 +122,20 @@ export default function Home() {
             <h1 className="py-24 text-center">What I Do</h1>
             {/* <h1 className="py-24 bg-clip-text dark:text-transparent bg-gradient-to-tl from-slate-300 to-slate-50">What I Do</h1> */}
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 [&>*]:p-4 xl:p-18 xl:px-48">
+            <div className="grid grid-cols-1 md:grid-cols-2 [&>*]:p-4 xl:p-18 xl:px-48">
               <Feature icon={BsLayersFill} title="Responsive Web Design">
                 Mobile-first, responsive sites that perform well and look good on any device.
               </Feature>
               <Feature icon={FaRocket} title="Rock-Solid Backend">
                 I combine six years of experience to build you a solid, fast, high-performance back-end service for your data.
               </Feature>
-              <Feature icon={IoPeople} title="Team Member">
+              {/* <Feature icon={IoPeople} title="Team Member">
                 I'm personally dedicated to providing you world-class development services.
                 Let's work together to build your dream app.
-              </Feature>
-              <Feature icon={FaGears} title="Technical Expertise">
+              </Feature> */}
+              {/* <Feature icon={FaGears} title="Technical Expertise">
                 I use cutting-edge tools and utilities. Proficient in running deployments on bare-metal, or cloud.
-              </Feature>
+              </Feature> */}
               <Feature icon={BsLightningFill} title="Rapid Development">
                 I proactively tackle problems and hurdle obstacles, inventing unique and creative solutions tailored to your needs.
               </Feature>
@@ -222,25 +222,80 @@ export default function Home() {
             {/* <h1 className="py-24 bg-clip-text dark:text-transparent bg-gradient-to-tl from-slate-300 to-slate-50">What I Do</h1> */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 [&>*]:p-4 xl:p-18 xl:px-48">
               <div className="flex flex-col max-w-[48rem] w-full">
-                <h2>Education</h2>
+                <h2 className="mb-6">Education</h2>
                 <span className="text-2xl"><span className="text-2xl font-semibold">B.S. Computer Science</span> - University at Albany</span>
                 <span className="uppercase dark:text-slate-400">Aug 2017 - May 2021</span>
                 <p>Excelled in challenging computer science and mathematics coursework</p>
                 <p>Achieved a 3.4 GPA while balancing a demanding course load and personal projects</p>
               </div>
-              <div className="flex flex-col max-w-[48rem] w-full">
-                <h2>Courses/Certifications</h2>
-                <span className="text-2xl"><span className="text-2xl font-semibold">B.S. Computer Science</span> - University at Albany</span>
-                <span className="uppercase dark:text-slate-400">Aug 2017 - May 2021</span>
-                <p>Excelled in challenging computer science and mathematics coursework</p>
-                <p>Achieved a 3.4 GPA while balancing a demanding course load and personal projects</p>
+              <div className="flex flex-col w-full">
+                <h2 className="mb-6">Courses/Certifications</h2>
+                <div className="w-full">
+                  <ul className='space-y-2'>
+                    <li className="hover:underline"><Link target="_blank" href="https://www.udemy.com/certificate/UC-0e59e413-7af0-4fd2-99be-df4df846e21c/">Learn and Understand NodeJS</Link></li>
+                    <li className="">
+                      <Link className="hover:underline" target="_blank" href="https://triplebyte.com/tb/julian-atkin-rio5onb/certificate">Triplebyte Certificate</Link>
+                      <table className="w-full">
+                        <tbody>
+                          <tr className="border">
+                            <td className="border p-2">
+                              Front-end
+                            </td>
+                            <td className="border p-2">
+                              Level 5
+                            </td>
+                          </tr>
+                          <tr className="border">
+                            <td className="border p-2">
+                              Back-end
+                            </td>
+                            <td className="border p-2">
+                              Level 4
+                            </td>
+                          </tr>
+                          <tr className="border">
+                            <td className="border p-2">
+                              General Coding Logic
+                            </td>
+                            <td className="border p-2">
+                              Level 4
+                            </td>
+                          </tr>
+                          <tr className="border">
+                            <td className="border p-2">
+                              React
+                            </td>
+                            <td className="border p-2">
+                              Level 4
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </li>
+                  </ul>
+
+                </div>
               </div>
-              <div className="flex flex-col max-w-[48rem] w-full">
-                <h2>Skills</h2>
-                <span className="text-2xl"><span className="text-2xl font-semibold">B.S. Computer Science</span> - University at Albany</span>
-                <span className="uppercase dark:text-slate-400">Aug 2017 - May 2021</span>
-                <p>Excelled in challenging computer science and mathematics coursework</p>
-                <p>Achieved a 3.4 GPA while balancing a demanding course load and personal projects</p>
+              <div className="flex flex-col w-full">
+                <h2 className="mb-6">Skills</h2>
+                <div className="w-full">
+                  <div className="flex justify-between">
+                    <ul className='grow space-y-2'>
+                      <li>React.js</li>
+                      <li>Vue.js</li>
+                      <li>Vanilla JS</li>
+                      <li>Node.js</li>
+                      <li>CSS</li>
+                    </ul>
+                    <ul className='grow space-y-2'>
+                      <li>MongoDB</li>
+                      <li>SQL</li>
+                      <li>AWS</li>
+                      <li>Firebase</li>
+                      <li>Linux</li>
+                    </ul>
+                  </div>
+                </div>
               </div>
 
               {/* <Feature icon={BsLayersFill} title="Responsive Web Design">
