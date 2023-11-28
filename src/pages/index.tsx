@@ -99,7 +99,7 @@ export default function Home() {
                 <div className="py-4 border-b border-dotted">
                   <span className="flex items-center gap-4">
                     <FaChevronRight></FaChevronRight>
-                    <Link className="text-xl" href="/resume">Check out my resume</Link>
+                    <Link className="text-xl" href="#resume">Check out my resume</Link>
                   </span>
                 </div>
                 <div className="py-4 border-b border-dotted flex flex-col">
